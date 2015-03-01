@@ -229,6 +229,10 @@ void processIncomingData()
       } // switch(swVal)
     } // else
   } // if (Serial.available() > 0 )
+  else
+  {
+    myDisplay.print(9999,0);                // NO SERIAL DATA so display 9999
+  }
 } // void processIncomingByte ()
 
 //=====================================================================================================================
